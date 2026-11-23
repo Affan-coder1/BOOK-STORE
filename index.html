@@ -1,0 +1,72 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BookHub - Online Book Store</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>BookHub</h1>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#books">Books</a>
+            <a href="#cart">Cart</a>
+            <a href="#orders">Orders</a>
+        </nav>
+    </header>
+
+    <section class="welcome" id="home">
+        <h2>Welcome to BookHub</h2>
+        <p>Find and purchase your favourite books.</p>
+
+        <div class="search-box">
+            <input type="text" id="search"
+                   placeholder="Search by title, author or genre...">
+            <button onclick="searchBooks()">Search</button>
+        </div>
+    </section>
+
+    <section id="books">
+        <h2>Available Books</h2>
+        <div id="book-list" class="book-container"></div>
+    </section>
+
+    <section id="cart">
+        <h2>Shopping Cart</h2>
+
+        <div id="cart-list"></div>
+
+        <h3 id="total">Total: Rs. 0</h3>
+
+        <button onclick="clearCart()">Clear Cart</button>
+    </section>
+
+    <section id="customer">
+        <h2>Customer Details</h2>
+
+        <input type="text" id="name"
+               placeholder="Enter your name">
+
+        <input type="text" id="address"
+               placeholder="Enter your address">
+
+        <input type="text" id="phone"
+               placeholder="Enter phone number">
+
+        <button onclick="checkout()">Place Order</button>
+    </section>
+
+    <section id="orders">
+        <h2>My Orders</h2>
+        <div id="order-list"></div>
+    </section>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
